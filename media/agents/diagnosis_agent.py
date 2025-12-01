@@ -6,7 +6,7 @@ Uses web search results to suggest possible conditions and treatments
 import json
 import re
 from typing import Dict, Any, List
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from media.agents.base import BaseAgent
 

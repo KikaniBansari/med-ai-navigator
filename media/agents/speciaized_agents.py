@@ -1,7 +1,7 @@
 import json
 import re
 from typing import Dict, Any
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from media.agents.base import BaseAgent
 
