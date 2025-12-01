@@ -1,5 +1,8 @@
-// API Configuration
-const API_BASE_URL = 'http://localhost:8000';
+// API Configuration - Auto-detect based on environment
+// In production (Render), use the same origin. In development, use localhost
+const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? 'http://localhost:8000'
+    : window.location.origin; // Use same origin in production (Render)
 
 // DOM Elements
 const patientForm = document.getElementById('patientForm');
